@@ -5,7 +5,7 @@ const breedRequest = require("./breedRequest");
 const breedFetcher = function (input) {
   input = process.argv[2];
   console.log(input);
-  url = "https://api.thecatappi.com/v1/breeds/search?q=" + input;
+  let url = "https://api.thecatappi.com/v1/breeds/search?q=" + input;
   console.log(url);
 
   request(url, (error, response, body) => {
